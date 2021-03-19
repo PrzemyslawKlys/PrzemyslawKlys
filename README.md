@@ -1,6 +1,10 @@
 ### Hi there 👋
 
-Owner and mainteiner of everything made by EvotecIT (https://github.com/EvotecIT/)
+My name is Przemek, I'm IT Architect with over 15 years of experience in IT. I'm mostly focused on PowerShell, but I do work with C#, JavaScript, Css and HTML. I try to use the best tool for the job rather then trying to focus on particular language. Just because that tool is always PowerShell it doesn't mean I am PowerShell biased 😂
+
+I've decided that all projects that I own or maintain are created as part of [Evotec IT](https://github.com/EvotecIT) organization, while I keep my profile for forks of projects I contribute to. This is why you won't see much action on my profile, because most of it goes into **Evotec IT** organization that I own.
+
+
 
 <!--
 **PrzemyslawKlys/PrzemyslawKlys** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
