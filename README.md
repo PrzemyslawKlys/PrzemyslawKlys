@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+Owner and mainteiner of everything made by EvotecIT (https://github.com/EvotecIT/)
+
 <!--
 **PrzemyslawKlys/PrzemyslawKlys** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
