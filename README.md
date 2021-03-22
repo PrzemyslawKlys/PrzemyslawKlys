@@ -18,7 +18,7 @@
 </p>
 <p align="center">
   <a href="[#](https://www.powershellgallery.com/profiles/Przemyslaw.Klys)">
-    <img src="https://img.shields.io/badge/PowerShellGallery-48-5b24ff?style=for-the-badge&logo=google&logoColor=white">
+    <img src="https://img.shields.io/badge/PowerShellGallery-48-5b24ff?style=for-the-badge&logo=PowerShell&logoColor=white">
   </a>
   <a href="https://github.com/sponsors/PrzemyslawKlys">
     <img src="https://img.shields.io/github/sponsors/PrzemyslawKlys?style=for-the-badge&logo=Github-Sponsors&logoColor=white">
