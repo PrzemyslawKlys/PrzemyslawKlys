@@ -12,6 +12,11 @@
   <a href="https://www.facebook.com/evotecpl">
     <img src="https://img.shields.io/badge/Facebook-000000?style=for-the-badge&logo=facebook&logoColor=white">
   </a>
+    <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys">
+    <img src="https://img.shields.io/badge/Microsoft MVP-5b24ff?style=for-the-badge&logo=Microsoft&logoColor=white">
+  </a>
+</p>
+<p align="center">
   <a href="[#](https://www.powershellgallery.com/profiles/Przemyslaw.Klys)">
     <img src="https://img.shields.io/badge/PowerShellGallery-48-5b24ff?style=for-the-badge&logo=google&logoColor=white">
   </a>
@@ -20,12 +25,12 @@
   </a>
 </p>
 
-I'm IT Architect with over 15 years of experience in IT. I'm mostly focused on PowerShell, but I do work with C#, JavaScript, Css and HTML. I try to use the best tool for the job rather then trying to focus on particular language. Just because that tool is always PowerShell it doesn't mean I am PowerShell biased 😂
+I'm IT Architect with over 15 years of experience in IT. I'm [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys) since 2020. I'm mostly focused on PowerShell, but I do work with C#, JavaScript, Css and HTML. I try to use the best tool for the job rather then trying to focus on particular language. Just because that tool is always PowerShell it doesn't mean I am PowerShell biased 😂
 
 I've decided that all projects that I own or maintain are created as part of [Evotec IT](https://github.com/EvotecIT) organization, while I keep my profile for forks of projects I contribute to. This is why you won't see much action on my profile, because most of it goes into **Evotec IT** organization that I own.
 
 - 🔭 I’m currently working on [PSWriteHTML](https://github.com/EvotecIT/PSWriteHTML), [Testimo](https://github.com/EvotecIT/Testimo), [GPOZaurr](https://github.com/EvotecIT/GPOZaurr), [PSWinDocumentation](https://github.com/EvotecIT/PSWinDocumentation), and few other projects
-- 🌱 I’m currently learning **JavaScript** & **CSS**
+- 🌱 I’m currently learning **HTML** & **JavaScript** & **CSS**
 - 👯 I’m looking to collaborate on any of the projects in [Evotec IT](https://github.com/EvotecIT) organization
 
 ### My GitHub Stats
