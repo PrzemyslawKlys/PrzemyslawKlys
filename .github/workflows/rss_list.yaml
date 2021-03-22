@@ -1,0 +1,15 @@
+﻿name: Update this repo's README
+
+on:
+  schedule:
+    # Once a day at 8 AM
+    - cron: 0 8 * * *
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: PrzemyslawKlys/przemyslawklys@v1
+        with:
+          feed-url: https://evotec.xyz/feed/
+          readme-section: feed

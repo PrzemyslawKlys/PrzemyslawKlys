@@ -33,3 +33,9 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=przemyslawklys&text_color=4189ff&hide=stars&hide_border=true&show_icons=true&theme=dark)](https://github.com/przemyslawklys)
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/wakatime?username=PrzemyslawKlys&layout=compact&hide_border=true&card_width=445&theme=dark)](https://github.com/przemyslawklys)
+
+### My recent blogs
+
+<!--START_SECTION:feed-->
+...
+<!--END_SECTION:feed-->
