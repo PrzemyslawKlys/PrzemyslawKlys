@@ -37,5 +37,9 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!--START_SECTION:feed-->
-...
+* [Submitting blogs to web.archive.org using PowerShell](https:&#x2F;&#x2F;evotec.xyz&#x2F;submitting-blogs-to-web-archive-org-using-powershell&#x2F;#utm_source&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;submitting-blogs-to-web-archive-org-using-powershell)
+* [Advanced HTML reporting using PowerShell](https:&#x2F;&#x2F;evotec.xyz&#x2F;advanced-html-reporting-using-powershell&#x2F;#utm_source&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;advanced-html-reporting-using-powershell)
+* [Monitoring LDAPS connectivity&#x2F;certificate with PowerShell](https:&#x2F;&#x2F;evotec.xyz&#x2F;monitoring-ldaps-connectivity-certificate-with-powershell&#x2F;#utm_source&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;monitoring-ldaps-connectivity-certificate-with-powershell)
+* [The only command you will ever need to understand and fix your Group Policies (GPO)](https:&#x2F;&#x2F;evotec.xyz&#x2F;the-only-command-you-will-ever-need-to-understand-and-fix-your-group-policies-gpo&#x2F;#utm_source&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;the-only-command-you-will-ever-need-to-understand-and-fix-your-group-policies-gpo)
+* [Creating Office 365 Migration Diagram with PowerShell](https:&#x2F;&#x2F;evotec.xyz&#x2F;creating-office-365-migration-diagram-with-powershell&#x2F;#utm_source&#x3D;rss&amp;utm_medium&#x3D;rss&amp;utm_campaign&#x3D;creating-office-365-migration-diagram-with-powershell)
 <!--END_SECTION:feed-->
