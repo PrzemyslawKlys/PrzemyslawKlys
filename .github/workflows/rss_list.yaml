@@ -11,7 +11,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: PrzemyslawKlys/przemyslawklys@master
+      - uses: PrzemyslawKlys/PrzemyslawKlys@v1
         with:
           feed-url: https://evotec.xyz/feed/
           readme-section: feed
