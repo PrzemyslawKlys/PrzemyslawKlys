@@ -1,7 +1,3 @@
-<h1 align="center">
-  Hello Visitor, My name is Przemek
-</h1>
-
 <p align="center">
   <a href="https://twitter.com/przemyslawklys">
     <img src="https://img.shields.io/badge/Twitter-1da1f2?style=for-the-badge&logo=twitter&logoColor=white">
