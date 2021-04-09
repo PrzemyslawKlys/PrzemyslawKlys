@@ -35,9 +35,11 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 
 ### My GitHub Stats
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=przemyslawklys&text_color=4189ff&hide=stars&hide_border=true&show_icons=true&theme=dark)](https://github.com/przemyslawklys)
+[![Przemyslaw's GitHub stats](https://github-readme-stats.vercel.app/api?username=przemyslawklys&text_color=4189ff&hide=stars&hide_border=true&show_icons=true&theme=dark)](https://github.com/przemyslawklys)
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/wakatime?username=PrzemyslawKlys&layout=compact&hide_border=true&card_width=445&theme=dark)](https://github.com/przemyslawklys)
+[![Przemyslaw's GitHub stats](https://github-readme-stats.vercel.app/api/wakatime?username=PrzemyslawKlys&layout=compact&hide_border=true&card_width=445&theme=dark)](https://github.com/przemyslawklys)
+
+[![Przemyslaw's GitHub stats](https://github-readme-streak-stats.herokuapp.com/?user=przemyslawklys&theme=dark&hide_border=true")](https://github.com/przemyslawklys)
 
 ### My recent blogs
 
@@ -53,3 +55,9 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Visually display Active Directory Nested Group Membership using PowerShell](https://evotec.xyz/visually-display-active-directory-nested-group-membership-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-nested-group-membership-using-powershell)
 - [Restoring (Recovering) PowerShell Scripts from Event Logs](https://evotec.xyz/restoring-recovering-powershell-scripts-from-event-logs/#utm_source=rss&utm_medium=rss&utm_campaign=restoring-recovering-powershell-scripts-from-event-logs)
 <!-- BLOG-POST-LIST:END -->
+
+### My projects
+
+<!-- GITHUB-ORGANIZATION-PROJECTS:START -->
+
+<!-- GITHUB-ORGANIZATION-PROJECTS:END -->
