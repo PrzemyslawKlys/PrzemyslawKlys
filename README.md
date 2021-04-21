@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Sending email as an alias (proxy address) with Office 365](https://evotec.xyz/sending-email-as-an-alias-proxy-address-with-office-365/#utm_source=rss&utm_medium=rss&utm_campaign=sending-email-as-an-alias-proxy-address-with-office-365)
 - [Submitting blogs to web.archive.org using PowerShell](https://evotec.xyz/submitting-blogs-to-web-archive-org-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=submitting-blogs-to-web-archive-org-using-powershell)
 - [Advanced HTML reporting using PowerShell](https://evotec.xyz/advanced-html-reporting-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=advanced-html-reporting-using-powershell)
 - [Monitoring LDAPS connectivity/certificate with PowerShell](https://evotec.xyz/monitoring-ldaps-connectivity-certificate-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=monitoring-ldaps-connectivity-certificate-with-powershell)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Introducing PSTeams 2.0 – Support for Adaptive Cards, Hero Cards, List Cards and Thumbnail Cards](https://evotec.xyz/introducing-psteams-2-0-support-for-adaptive-cards-hero-cards-list-cards-and-thumbnail-cards/#utm_source=rss&utm_medium=rss&utm_campaign=introducing-psteams-2-0-support-for-adaptive-cards-hero-cards-list-cards-and-thumbnail-cards)
 - [Visually display Active Directory Trusts using PowerShell](https://evotec.xyz/visually-display-active-directory-trusts-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-trusts-using-powershell)
 - [Visually display Active Directory Nested Group Membership using PowerShell](https://evotec.xyz/visually-display-active-directory-nested-group-membership-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-nested-group-membership-using-powershell)
-- [Restoring (Recovering) PowerShell Scripts from Event Logs](https://evotec.xyz/restoring-recovering-powershell-scripts-from-event-logs/#utm_source=rss&utm_medium=rss&utm_campaign=restoring-recovering-powershell-scripts-from-event-logs)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
