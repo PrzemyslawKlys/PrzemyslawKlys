@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Easy way to connect to FTPS and SFTP using PowerShell](https://evotec.xyz/easy-way-to-connect-to-ftps-and-sftp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=easy-way-to-connect-to-ftps-and-sftp-using-powershell)
 - [Sending email as an alias (proxy address) with Office 365](https://evotec.xyz/sending-email-as-an-alias-proxy-address-with-office-365/#utm_source=rss&utm_medium=rss&utm_campaign=sending-email-as-an-alias-proxy-address-with-office-365)
 - [Submitting blogs to web.archive.org using PowerShell](https://evotec.xyz/submitting-blogs-to-web-archive-org-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=submitting-blogs-to-web-archive-org-using-powershell)
 - [Advanced HTML reporting using PowerShell](https://evotec.xyz/advanced-html-reporting-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=advanced-html-reporting-using-powershell)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Remove-Item : Access to the cloud file is denied while deleting files from OneDrive](https://evotec.xyz/remove-item-access-to-the-cloud-file-is-denied-while-deleting-files-from-onedrive/#utm_source=rss&utm_medium=rss&utm_campaign=remove-item-access-to-the-cloud-file-is-denied-while-deleting-files-from-onedrive)
 - [Introducing PSTeams 2.0 – Support for Adaptive Cards, Hero Cards, List Cards and Thumbnail Cards](https://evotec.xyz/introducing-psteams-2-0-support-for-adaptive-cards-hero-cards-list-cards-and-thumbnail-cards/#utm_source=rss&utm_medium=rss&utm_campaign=introducing-psteams-2-0-support-for-adaptive-cards-hero-cards-list-cards-and-thumbnail-cards)
 - [Visually display Active Directory Trusts using PowerShell](https://evotec.xyz/visually-display-active-directory-trusts-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-trusts-using-powershell)
-- [Visually display Active Directory Nested Group Membership using PowerShell](https://evotec.xyz/visually-display-active-directory-nested-group-membership-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-nested-group-membership-using-powershell)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
