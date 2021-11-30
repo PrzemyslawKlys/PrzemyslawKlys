@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Solving typo problems with Fuzzy Search in PSWriteHTML](https://evotec.xyz/solving-typo-problems-with-fuzzy-search-in-pswritehtml/#utm_source=rss&utm_medium=rss&utm_campaign=solving-typo-problems-with-fuzzy-search-in-pswritehtml)
 - [Active Directory Domain Services could not replicate the directory partition – The replication operation encountered a database error](https://evotec.xyz/active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error/#utm_source=rss&utm_medium=rss&utm_campaign=active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error)
 - [Configuring Office 365 settings using PowerShell – The non-supported way](https://evotec.xyz/configuring-office-365-settings-using-powershell-the-non-supported-way/#utm_source=rss&utm_medium=rss&utm_campaign=configuring-office-365-settings-using-powershell-the-non-supported-way)
 - [Encrypting and decrypting PGP using PowerShell](https://evotec.xyz/encrypting-and-decrypting-pgp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=encrypting-and-decrypting-pgp-using-powershell)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Advanced HTML reporting using PowerShell](https://evotec.xyz/advanced-html-reporting-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=advanced-html-reporting-using-powershell)
 - [Monitoring LDAPS connectivity/certificate with PowerShell](https://evotec.xyz/monitoring-ldaps-connectivity-certificate-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=monitoring-ldaps-connectivity-certificate-with-powershell)
 - [The only command you will ever need to understand and fix your Group Policies &lpar;GPO&rpar;](https://evotec.xyz/the-only-command-you-will-ever-need-to-understand-and-fix-your-group-policies-gpo/#utm_source=rss&utm_medium=rss&utm_campaign=the-only-command-you-will-ever-need-to-understand-and-fix-your-group-policies-gpo)
-- [Creating Office 365 Migration Diagram with PowerShell](https://evotec.xyz/creating-office-365-migration-diagram-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=creating-office-365-migration-diagram-with-powershell)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
