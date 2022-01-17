@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Mentioning users in notifications using PSTeams PowerShell Module](https://evotec.xyz/mentioning-users-in-notifications-using-psteams-powershell-module/#utm_source=rss&utm_medium=rss&utm_campaign=mentioning-users-in-notifications-using-psteams-powershell-module)
 - [Finding duplicate SPN with PowerShell](https://evotec.xyz/finding-duplicate-spn-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=finding-duplicate-spn-with-powershell)
 - [Solving typo problems with Fuzzy Search in PSWriteHTML](https://evotec.xyz/solving-typo-problems-with-fuzzy-search-in-pswritehtml/#utm_source=rss&utm_medium=rss&utm_campaign=solving-typo-problems-with-fuzzy-search-in-pswritehtml)
 - [Active Directory Domain Services could not replicate the directory partition – The replication operation encountered a database error](https://evotec.xyz/active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error/#utm_source=rss&utm_medium=rss&utm_campaign=active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Sending email as an alias &lpar;proxy address&rpar; with Office 365](https://evotec.xyz/sending-email-as-an-alias-proxy-address-with-office-365/#utm_source=rss&utm_medium=rss&utm_campaign=sending-email-as-an-alias-proxy-address-with-office-365)
 - [Submitting blogs to web.archive.org using PowerShell](https://evotec.xyz/submitting-blogs-to-web-archive-org-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=submitting-blogs-to-web-archive-org-using-powershell)
 - [Advanced HTML reporting using PowerShell](https://evotec.xyz/advanced-html-reporting-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=advanced-html-reporting-using-powershell)
-- [Monitoring LDAPS connectivity/certificate with PowerShell](https://evotec.xyz/monitoring-ldaps-connectivity-certificate-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=monitoring-ldaps-connectivity-certificate-with-powershell)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
