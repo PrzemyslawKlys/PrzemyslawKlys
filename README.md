@@ -40,16 +40,16 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
-- [Sending email as an alias (proxy address) with Office 365](https://evotec.xyz/sending-email-as-an-alias-proxy-address-with-office-365/#utm_source=rss&utm_medium=rss&utm_campaign=sending-email-as-an-alias-proxy-address-with-office-365)
+- [Mentioning users in notifications using PSTeams PowerShell Module](https://evotec.xyz/mentioning-users-in-notifications-using-psteams-powershell-module/#utm_source=rss&utm_medium=rss&utm_campaign=mentioning-users-in-notifications-using-psteams-powershell-module)
+- [Finding duplicate SPN with PowerShell](https://evotec.xyz/finding-duplicate-spn-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=finding-duplicate-spn-with-powershell)
+- [Solving typo problems with Fuzzy Search in PSWriteHTML](https://evotec.xyz/solving-typo-problems-with-fuzzy-search-in-pswritehtml/#utm_source=rss&utm_medium=rss&utm_campaign=solving-typo-problems-with-fuzzy-search-in-pswritehtml)
+- [Active Directory Domain Services could not replicate the directory partition – The replication operation encountered a database error](https://evotec.xyz/active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error/#utm_source=rss&utm_medium=rss&utm_campaign=active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error)
+- [Configuring Office 365 settings using PowerShell – The non-supported way](https://evotec.xyz/configuring-office-365-settings-using-powershell-the-non-supported-way/#utm_source=rss&utm_medium=rss&utm_campaign=configuring-office-365-settings-using-powershell-the-non-supported-way)
+- [Encrypting and decrypting PGP using PowerShell](https://evotec.xyz/encrypting-and-decrypting-pgp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=encrypting-and-decrypting-pgp-using-powershell)
+- [Easy way to connect to FTPS and SFTP using PowerShell](https://evotec.xyz/easy-way-to-connect-to-ftps-and-sftp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=easy-way-to-connect-to-ftps-and-sftp-using-powershell)
+- [Sending email as an alias &lpar;proxy address&rpar; with Office 365](https://evotec.xyz/sending-email-as-an-alias-proxy-address-with-office-365/#utm_source=rss&utm_medium=rss&utm_campaign=sending-email-as-an-alias-proxy-address-with-office-365)
 - [Submitting blogs to web.archive.org using PowerShell](https://evotec.xyz/submitting-blogs-to-web-archive-org-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=submitting-blogs-to-web-archive-org-using-powershell)
 - [Advanced HTML reporting using PowerShell](https://evotec.xyz/advanced-html-reporting-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=advanced-html-reporting-using-powershell)
-- [Monitoring LDAPS connectivity/certificate with PowerShell](https://evotec.xyz/monitoring-ldaps-connectivity-certificate-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=monitoring-ldaps-connectivity-certificate-with-powershell)
-- [The only command you will ever need to understand and fix your Group Policies (GPO)](https://evotec.xyz/the-only-command-you-will-ever-need-to-understand-and-fix-your-group-policies-gpo/#utm_source=rss&utm_medium=rss&utm_campaign=the-only-command-you-will-ever-need-to-understand-and-fix-your-group-policies-gpo)
-- [Creating Office 365 Migration Diagram with PowerShell](https://evotec.xyz/creating-office-365-migration-diagram-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=creating-office-365-migration-diagram-with-powershell)
-- [Remove-Item : Access to the cloud file is denied while deleting files from OneDrive](https://evotec.xyz/remove-item-access-to-the-cloud-file-is-denied-while-deleting-files-from-onedrive/#utm_source=rss&utm_medium=rss&utm_campaign=remove-item-access-to-the-cloud-file-is-denied-while-deleting-files-from-onedrive)
-- [Introducing PSTeams 2.0 – Support for Adaptive Cards, Hero Cards, List Cards and Thumbnail Cards](https://evotec.xyz/introducing-psteams-2-0-support-for-adaptive-cards-hero-cards-list-cards-and-thumbnail-cards/#utm_source=rss&utm_medium=rss&utm_campaign=introducing-psteams-2-0-support-for-adaptive-cards-hero-cards-list-cards-and-thumbnail-cards)
-- [Visually display Active Directory Trusts using PowerShell](https://evotec.xyz/visually-display-active-directory-trusts-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-trusts-using-powershell)
-- [Visually display Active Directory Nested Group Membership using PowerShell](https://evotec.xyz/visually-display-active-directory-nested-group-membership-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=visually-display-active-directory-nested-group-membership-using-powershell)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
