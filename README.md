@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Difference between GetTempFileName&lpar;&rpar; and GetRandomFileName&lpar;&rpar; that got my ass kicked](https://evotec.xyz/difference-between-gettempfilename-and-getrandomfilename-that-got-my-ass-kicked/#utm_source=rss&utm_medium=rss&utm_campaign=difference-between-gettempfilename-and-getrandomfilename-that-got-my-ass-kicked)
 - [Mentioning users in notifications using PSTeams PowerShell Module](https://evotec.xyz/mentioning-users-in-notifications-using-psteams-powershell-module/#utm_source=rss&utm_medium=rss&utm_campaign=mentioning-users-in-notifications-using-psteams-powershell-module)
 - [Finding duplicate SPN with PowerShell](https://evotec.xyz/finding-duplicate-spn-with-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=finding-duplicate-spn-with-powershell)
 - [Solving typo problems with Fuzzy Search in PSWriteHTML](https://evotec.xyz/solving-typo-problems-with-fuzzy-search-in-pswritehtml/#utm_source=rss&utm_medium=rss&utm_campaign=solving-typo-problems-with-fuzzy-search-in-pswritehtml)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Easy way to connect to FTPS and SFTP using PowerShell](https://evotec.xyz/easy-way-to-connect-to-ftps-and-sftp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=easy-way-to-connect-to-ftps-and-sftp-using-powershell)
 - [Sending email as an alias &lpar;proxy address&rpar; with Office 365](https://evotec.xyz/sending-email-as-an-alias-proxy-address-with-office-365/#utm_source=rss&utm_medium=rss&utm_campaign=sending-email-as-an-alias-proxy-address-with-office-365)
 - [Submitting blogs to web.archive.org using PowerShell](https://evotec.xyz/submitting-blogs-to-web-archive-org-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=submitting-blogs-to-web-archive-org-using-powershell)
-- [Advanced HTML reporting using PowerShell](https://evotec.xyz/advanced-html-reporting-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=advanced-html-reporting-using-powershell)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
