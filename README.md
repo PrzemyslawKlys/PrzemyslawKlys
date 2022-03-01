@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [PowerShell – Comparing advanced objects](https://evotec.xyz/powershell-comparing-advanced-objects/#utm_source=rss&utm_medium=rss&utm_campaign=powershell-comparing-advanced-objects)
 - [PowerShell – Converting advanced object to flat object](https://evotec.xyz/powershell-converting-advanced-object-to-flat-object/#utm_source=rss&utm_medium=rss&utm_campaign=powershell-converting-advanced-object-to-flat-object)
 - [Office 365 Health Service using PowerShell](https://evotec.xyz/office-365-health-service-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=office-365-health-service-using-powershell)
 - [Difference between GetTempFileName&lpar;&rpar; and GetRandomFileName&lpar;&rpar; that got my ass kicked](https://evotec.xyz/difference-between-gettempfilename-and-getrandomfilename-that-got-my-ass-kicked/#utm_source=rss&utm_medium=rss&utm_campaign=difference-between-gettempfilename-and-getrandomfilename-that-got-my-ass-kicked)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Active Directory Domain Services could not replicate the directory partition – The replication operation encountered a database error](https://evotec.xyz/active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error/#utm_source=rss&utm_medium=rss&utm_campaign=active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error)
 - [Configuring Office 365 settings using PowerShell – The non-supported way](https://evotec.xyz/configuring-office-365-settings-using-powershell-the-non-supported-way/#utm_source=rss&utm_medium=rss&utm_campaign=configuring-office-365-settings-using-powershell-the-non-supported-way)
 - [Encrypting and decrypting PGP using PowerShell](https://evotec.xyz/encrypting-and-decrypting-pgp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=encrypting-and-decrypting-pgp-using-powershell)
-- [Easy way to connect to FTPS and SFTP using PowerShell](https://evotec.xyz/easy-way-to-connect-to-ftps-and-sftp-using-powershell/#utm_source=rss&utm_medium=rss&utm_campaign=easy-way-to-connect-to-ftps-and-sftp-using-powershell)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
