@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [OfficeIMO – Free cross-platform Microsoft Word .NET library](https://evotec.xyz/officeimo-free-cross-platform-microsoft-word-net-library/)
 - [Reading IIS logs with PowerShell](https://evotec.xyz/reading-iis-logs-with-powershell/)
 - [PowerShell – Comparing advanced objects](https://evotec.xyz/powershell-comparing-advanced-objects/)
 - [PowerShell – Converting advanced object to flat object](https://evotec.xyz/powershell-converting-advanced-object-to-flat-object/)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Finding duplicate SPN with PowerShell](https://evotec.xyz/finding-duplicate-spn-with-powershell/)
 - [Solving typo problems with Fuzzy Search in PSWriteHTML](https://evotec.xyz/solving-typo-problems-with-fuzzy-search-in-pswritehtml/)
 - [Active Directory Domain Services could not replicate the directory partition – The replication operation encountered a database error](https://evotec.xyz/active-directory-domain-services-could-not-replicate-the-directory-partition-the-replication-operation-encountered-a-database-error/)
-- [Configuring Office 365 settings using PowerShell – The non-supported way](https://evotec.xyz/configuring-office-365-settings-using-powershell-the-non-supported-way/)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
