@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Finding duplicate DNS records by IP Address using PowerShell](https://evotec.xyz/finding-duplicate-dns-records-by-ip-adress-using-powershell/)
 - [Finding duplicate DNS entries using PowerShell](https://evotec.xyz/finding-duplicate-dns-entries-using-powershell/)
 - [OfficeIMO – Free cross-platform Microsoft Word .NET library](https://evotec.xyz/officeimo-free-cross-platform-microsoft-word-net-library/)
 - [Reading IIS logs with PowerShell](https://evotec.xyz/reading-iis-logs-with-powershell/)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Difference between GetTempFileName&lpar;&rpar; and GetRandomFileName&lpar;&rpar; that got my ass kicked](https://evotec.xyz/difference-between-gettempfilename-and-getrandomfilename-that-got-my-ass-kicked/)
 - [Mentioning users in notifications using PSTeams PowerShell Module](https://evotec.xyz/mentioning-users-in-notifications-using-psteams-powershell-module/)
 - [Finding duplicate SPN with PowerShell](https://evotec.xyz/finding-duplicate-spn-with-powershell/)
-- [Solving typo problems with Fuzzy Search in PSWriteHTML](https://evotec.xyz/solving-typo-problems-with-fuzzy-search-in-pswritehtml/)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
