@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Working with VirusTotal from PowerShell](https://evotec.xyz/working-with-virustotal-from-powershell/)
 - [Reporting group membership for critical Active Directory groups](https://evotec.xyz/reporting-group-membership-for-critical-active-directory-groups/)
 - [Finding duplicate DNS records by IP Address using PowerShell](https://evotec.xyz/finding-duplicate-dns-records-by-ip-adress-using-powershell/)
 - [Finding duplicate DNS entries using PowerShell](https://evotec.xyz/finding-duplicate-dns-entries-using-powershell/)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [PowerShell – Converting advanced object to flat object](https://evotec.xyz/powershell-converting-advanced-object-to-flat-object/)
 - [Office 365 Health Service using PowerShell](https://evotec.xyz/office-365-health-service-using-powershell/)
 - [Difference between GetTempFileName&lpar;&rpar; and GetRandomFileName&lpar;&rpar; that got my ass kicked](https://evotec.xyz/difference-between-gettempfilename-and-getrandomfilename-that-got-my-ass-kicked/)
-- [Mentioning users in notifications using PSTeams PowerShell Module](https://evotec.xyz/mentioning-users-in-notifications-using-psteams-powershell-module/)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
