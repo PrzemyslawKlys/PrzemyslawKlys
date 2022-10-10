@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Easy way to send emails using Microsoft Graph API &lpar;Office 365&rpar; with PowerShell](https://evotec.xyz/easy-way-to-send-emails-using-microsoft-graph-api-office-365-with-powershell/)
 - [Adaptive Cards with Tables and Linebreaks in Microsoft Teams](https://evotec.xyz/adaptive-cards-with-tables-and-linebreaks-in-microsoft-teams/)
 - [Working with VirusTotal from PowerShell](https://evotec.xyz/working-with-virustotal-from-powershell/)
 - [Reporting group membership for critical Active Directory groups](https://evotec.xyz/reporting-group-membership-for-critical-active-directory-groups/)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Reading IIS logs with PowerShell](https://evotec.xyz/reading-iis-logs-with-powershell/)
 - [PowerShell – Comparing advanced objects](https://evotec.xyz/powershell-comparing-advanced-objects/)
 - [PowerShell – Converting advanced object to flat object](https://evotec.xyz/powershell-converting-advanced-object-to-flat-object/)
-- [Office 365 Health Service using PowerShell](https://evotec.xyz/office-365-health-service-using-powershell/)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
