@@ -40,6 +40,7 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 ### My recent blogs
 
 <!-- BLOG-POST-LIST:START -->
+- [Upload and Download files from Azure Blob Storage using Connection String](https://evotec.xyz/upload-and-download-files-from-azure-blob-storage-using-connection-string/)
 - [PowerBGInfo – PowerShell alternative to Sysinternals BGInfo](https://evotec.xyz/powerbginfo-powershell-alternative-to-sysinternals-bginfo/)
 - [Image Manipulation, Image Resize, Image Combine and more with PowerShell](https://evotec.xyz/image-manipulation-image-resize-image-combine-and-more-with-powershell/)
 - [Easy way to send emails using Microsoft Graph API &lpar;Office 365&rpar; with PowerShell](https://evotec.xyz/easy-way-to-send-emails-using-microsoft-graph-api-office-365-with-powershell/)
@@ -49,7 +50,6 @@ I've decided that all projects that I own or maintain are created as part of [Ev
 - [Finding duplicate DNS records by IP Address using PowerShell](https://evotec.xyz/finding-duplicate-dns-records-by-ip-adress-using-powershell/)
 - [Finding duplicate DNS entries using PowerShell](https://evotec.xyz/finding-duplicate-dns-entries-using-powershell/)
 - [OfficeIMO – Free cross-platform Microsoft Word .NET library](https://evotec.xyz/officeimo-free-cross-platform-microsoft-word-net-library/)
-- [Reading IIS logs with PowerShell](https://evotec.xyz/reading-iis-logs-with-powershell/)
 <!-- BLOG-POST-LIST:END -->
 
 ### My projects
