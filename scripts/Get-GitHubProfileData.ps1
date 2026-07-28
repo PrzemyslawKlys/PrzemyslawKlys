@@ -23,7 +23,8 @@ if (-not [string]::IsNullOrWhiteSpace($Token)) {
 }
 
 $repositories = [System.Collections.Generic.List[object]]::new()
-for ($page = 1; $page -le 10; $page++) {
+$page = 1
+while ($true) {
     $uri = "https://api.github.com/orgs/$Organization/repos?type=public&sort=updated&per_page=100&page=$page"
     $batch = Invoke-RestMethod -Uri $uri -Headers $headers -Method Get
     foreach ($repository in $batch) {
@@ -32,8 +33,11 @@ for ($page = 1; $page -le 10; $page++) {
     if ($batch.Count -lt 100) {
         break
     }
+    $page++
 }
 
+$profile = Invoke-RestMethod -Uri "https://api.github.com/users/$UserName" -Headers $headers -Method Get
+$displayName = if ([string]::IsNullOrWhiteSpace([string]$profile.name)) { [string]$profile.login } else { [string]$profile.name }
 $maintained = @($repositories | Where-Object { -not $_.archived -and -not $_.fork })
 $totalStars = 0
 $totalForks = 0
@@ -66,6 +70,7 @@ $portfolio = @(
 $contributionDays = @()
 $totalContributions = 0
 $activeDays = 0
+$contributionDataAvailable = $false
 if (-not [string]::IsNullOrWhiteSpace($Token)) {
     $from = $now.Date.AddDays(-364).ToString('yyyy-MM-ddTHH:mm:ssZ')
     $to = $now.Date.AddDays(1).AddSeconds(-1).ToString('yyyy-MM-ddTHH:mm:ssZ')
@@ -112,12 +117,14 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
             }
     )
     $activeDays = @($contributionDays | Where-Object Count -gt 0).Count
+    $contributionDataAvailable = $true
 }
 
 [pscustomobject] @{
     GeneratedAt      = $now.ToString('o')
     Organization     = $Organization
     UserName         = $UserName
+    DisplayName      = $displayName
     Metrics          = [pscustomobject] @{
         MaintainedRepositories = $maintained.Count
         Stars                  = $totalStars
@@ -125,6 +132,7 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
         ActiveProjects         = $activeProjects.Count
         Contributions         = $totalContributions
         ActiveDays             = $activeDays
+        ContributionDataAvailable = $contributionDataAvailable
     }
     ContributionDays = $contributionDays
     Projects         = $portfolio

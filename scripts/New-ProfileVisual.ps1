@@ -21,7 +21,9 @@ if (-not (Get-Command -Name New-ImageConsoleStory -ErrorAction SilentlyContinue)
 }
 
 $invariant = [System.Globalization.CultureInfo]::InvariantCulture
-$profileName = 'Przemys' + [char]0x0142 + 'aw K' + [char]0x0142 + 'ys'
+$profileName = [string]$Data.DisplayName
+$userNameLiteral = "'" + ([string]$Data.UserName).Replace("'", "''") + "'"
+$organizationLiteral = "'" + ([string]$Data.Organization).Replace("'", "''") + "'"
 $separator = [char]0x00B7
 
 $starsValue = [string]$Data.Metrics.Stars
@@ -32,19 +34,23 @@ $forksValue = [string]$Data.Metrics.Forks
 if ([int]$Data.Metrics.Forks -ge 1000) {
     $forksValue = ([double]$Data.Metrics.Forks / 1000).ToString('0.0', $invariant) + 'K'
 }
-$contributionValue = if ([int]$Data.Metrics.Contributions -gt 0) {
+$contributionValue = if (-not [bool]$Data.Metrics.ContributionDataAvailable) {
+    'token required'
+} elseif ([int]$Data.Metrics.Contributions -gt 0) {
     if ([int]$Data.Metrics.Contributions -ge 1000) {
         ([double]$Data.Metrics.Contributions / 1000).ToString('0.0', $invariant) + 'K'
     } else {
         [string]$Data.Metrics.Contributions
     }
 } else {
-    'token required'
+    '0'
 }
-$activeDaysValue = if ([int]$Data.Metrics.ActiveDays -gt 0) {
+$activeDaysValue = if (-not [bool]$Data.Metrics.ContributionDataAvailable) {
+    'token required'
+} elseif ([int]$Data.Metrics.ActiveDays -gt 0) {
     [string]$Data.Metrics.ActiveDays
 } else {
-    'token required'
+    '0'
 }
 
 $signal = [ChartForgeX.Terminal.TerminalTable]::Create()
@@ -78,18 +84,18 @@ $story = New-ImageConsoleStory -StoryScript {
     [void] $Console.WithTheme([ChartForgeX.Terminal.TerminalTheme]::PowerShell())
     [void] $Console.WithWidth(886).WithTypography(13.5, 20).WithTiming(0.35, 52, 0.055)
 
-    [void] $Console.Command("Get-EngineeringProfile -Name 'PrzemyslawKlys'")
+    [void] $Console.Command("Get-EngineeringProfile -Name $userNameLiteral")
     [void] $Console.Output(('Name         ' + $profileName), [ChartForgeX.Terminal.TerminalTextTone]::Accent)
     [void] $Console.Output('Role         IT Architect / Open-source maintainer / Microsoft MVP')
     [void] $Console.Output("Focus        PowerShell $separator .NET $separator Identity $separator Microsoft 365 $separator Documents")
     [void] $Console.Output('Approach     Reusable cores. Thin surfaces. Production-grade automation.', [ChartForgeX.Terminal.TerminalTextTone]::Muted)
     [void] $Console.Blank()
 
-    [void] $Console.Command('Get-OpenSourceSignal -Organization EvotecIT')
+    [void] $Console.Command("Get-OpenSourceSignal -Organization $organizationLiteral")
     [void] $Console.Table($signal)
     [void] $Console.Blank()
 
-    [void] $Console.Command('Get-ActivePortfolio -Organization EvotecIT -Top 5')
+    [void] $Console.Command("Get-ActivePortfolio -Organization $organizationLiteral -Top 5")
     [void] $Console.Table($portfolio)
     [void] $Console.Blank()
 
