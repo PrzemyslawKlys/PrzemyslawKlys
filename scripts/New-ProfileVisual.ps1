@@ -16,6 +16,8 @@ param(
 Set-StrictMode -Version 2.0
 $ErrorActionPreference = 'Stop'
 
+Import-Module -Name ImagePlayground -MinimumVersion 3.1.0 -ErrorAction Stop
+
 $invariant = [System.Globalization.CultureInfo]::InvariantCulture
 $background = [ChartForgeX.Primitives.ChartColor]::FromHex('#07111F')
 $card = [ChartForgeX.Primitives.ChartColor]::FromHex('#0D1B2E')
