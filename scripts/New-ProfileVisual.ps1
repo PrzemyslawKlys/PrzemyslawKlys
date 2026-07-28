@@ -16,71 +16,52 @@ param(
 Set-StrictMode -Version 2.0
 $ErrorActionPreference = 'Stop'
 
-Import-Module -Name ImagePlayground -MinimumVersion 3.1.0 -ErrorAction Stop
+if (-not (Get-Command -Name New-ImageConsoleStory -ErrorAction SilentlyContinue)) {
+    Import-Module -Name ImagePlayground -MinimumVersion 3.1.0 -ErrorAction Stop
+}
 
 $invariant = [System.Globalization.CultureInfo]::InvariantCulture
-$background = [ChartForgeX.Primitives.ChartColor]::FromHex('#07111F')
-$card = [ChartForgeX.Primitives.ChartColor]::FromHex('#0D1B2E')
-$plot = [ChartForgeX.Primitives.ChartColor]::FromHex('#0A1728')
-$border = [ChartForgeX.Primitives.ChartColor]::FromHex('#203653')
-$text = [ChartForgeX.Primitives.ChartColor]::FromHex('#F4F8FF')
-$muted = [ChartForgeX.Primitives.ChartColor]::FromHex('#91A6C2')
-$cyan = [ChartForgeX.Primitives.ChartColor]::FromHex('#5ED7F2')
-$mint = [ChartForgeX.Primitives.ChartColor]::FromHex('#49D6A7')
-$amber = [ChartForgeX.Primitives.ChartColor]::FromHex('#F5C76A')
 $profileName = 'Przemys' + [char]0x0142 + 'aw K' + [char]0x0142 + 'ys'
 $separator = [char]0x00B7
-
-$theme = [ChartForgeX.Themes.ChartTheme]::ReportDark()
-[void] $theme.WithSurfaceColors($background, $card, $plot, $border, $border)
-[void] $theme.WithTextColors($text, $muted)
-[void] $theme.WithGuideColors([ChartForgeX.Primitives.ChartColor]::FromHex('#20324A'), [ChartForgeX.Primitives.ChartColor]::FromHex('#35506E'))
-[void] $theme.WithPalette([string[]]@('#5ED7F2', '#6E8CFF', '#49D6A7', '#F5C76A', '#C084FC'))
-[void] $theme.WithSemanticColors($mint, $amber, [ChartForgeX.Primitives.ChartColor]::FromHex('#FB7185'))
-[void] $theme.WithTypography(30, 14, 13, 11, 11, 11)
-[void] $theme.WithCornerRadius(20, 14)
 
 $starsValue = [string]$Data.Metrics.Stars
 if ([int]$Data.Metrics.Stars -ge 1000) {
     $starsValue = ([double]$Data.Metrics.Stars / 1000).ToString('0.0', $invariant) + 'K'
 }
-$contributionValue = [string]$Data.Metrics.Contributions
-if ([int]$Data.Metrics.Contributions -ge 1000) {
-    $contributionValue = ([double]$Data.Metrics.Contributions / 1000).ToString('0.0', $invariant) + 'K'
+$forksValue = [string]$Data.Metrics.Forks
+if ([int]$Data.Metrics.Forks -ge 1000) {
+    $forksValue = ([double]$Data.Metrics.Forks / 1000).ToString('0.0', $invariant) + 'K'
 }
-
-$repositoriesCard = [ChartForgeX.VisualBlocks.MetricCard]::Create()
-[void] $repositoriesCard.WithMetric('Maintained repositories', [string]$Data.Metrics.MaintainedRepositories).WithCaption('public projects in EvotecIT').WithSymbol('OSS').WithStatus([ChartForgeX.VisualBlocks.VisualStatus]::Info).WithTheme($theme).WithSize(410, 132).WithPadding(22, 18, 22, 16)
-
-$starsCard = [ChartForgeX.VisualBlocks.MetricCard]::Create()
-[void] $starsCard.WithMetric('Community stars', $starsValue).WithCaption('across maintained projects').WithSymbol('STAR').WithStatus([ChartForgeX.VisualBlocks.VisualStatus]::Positive).WithTheme($theme).WithSize(410, 132).WithPadding(22, 18, 22, 16)
-
-$forksCard = [ChartForgeX.VisualBlocks.MetricCard]::Create()
-[void] $forksCard.WithMetric('Community forks', [string]$Data.Metrics.Forks).WithCaption('ideas carried into new work').WithSymbol('FORK').WithStatus([ChartForgeX.VisualBlocks.VisualStatus]::Neutral).WithTheme($theme).WithSize(410, 132).WithPadding(22, 18, 22, 16)
-
-$contributionsCard = [ChartForgeX.VisualBlocks.MetricCard]::Create()
-[void] $contributionsCard.WithMetric('Contributions', $contributionValue).WithCaption("$($Data.Metrics.ActiveDays) active days $separator last 12 months").WithSymbol('365').WithStatus([ChartForgeX.VisualBlocks.VisualStatus]::Info).WithTheme($theme).WithSize(410, 132).WithPadding(22, 18, 22, 16)
-
-$calendarItems = [ChartForgeX.Core.ChartCalendarHeatmapItem[]]@(
-    foreach ($day in $Data.ContributionDays) {
-        [ChartForgeX.Core.ChartCalendarHeatmapItem]::new([DateTime]::Parse([string]$day.Date, $invariant), [double]$day.Count)
+$contributionValue = if ([int]$Data.Metrics.Contributions -gt 0) {
+    if ([int]$Data.Metrics.Contributions -ge 1000) {
+        ([double]$Data.Metrics.Contributions / 1000).ToString('0.0', $invariant) + 'K'
+    } else {
+        [string]$Data.Metrics.Contributions
     }
-)
-if ($calendarItems.Count -eq 0) {
-    $calendarItems = [ChartForgeX.Core.ChartCalendarHeatmapItem[]]@(
-        [ChartForgeX.Core.ChartCalendarHeatmapItem]::new([DateTime]::UtcNow.Date, 0)
-    )
+} else {
+    'token required'
 }
-$calendar = [ChartForgeX.Core.Chart]::Create()
-[void] $calendar.WithTitle('Contribution rhythm').WithSubtitle('A year of engineering activity across GitHub').WithTheme($theme).WithSize(838, 264).WithPadding(36, 50, 20, 36).WithLegend($false)
-[void] $calendar.AddCalendarHeatmap('Contributions', $calendarItems, $cyan)
+$activeDaysValue = if ([int]$Data.Metrics.ActiveDays -gt 0) {
+    [string]$Data.Metrics.ActiveDays
+} else {
+    'token required'
+}
 
-$projects = [ChartForgeX.VisualBlocks.ChartTable]::Create()
-[void] $projects.WithTitle('Active portfolio').WithSubtitle('Recently shipped EvotecIT projects, ranked by community reach').WithTheme($theme).WithSize(838, 264).WithDenseMode()
-[void] $projects.WithColumns([string[]]@('Project', 'Stack', 'Stars', 'Updated'))
+$signal = [ChartForgeX.Terminal.TerminalTable]::Create()
+[void] $signal.WithColumns([string[]]@('SIGNAL', 'VALUE'))
+[void] $signal.AddRow([object[]]@('Maintained repositories', [string]$Data.Metrics.MaintainedRepositories))
+[void] $signal.AddRow([object[]]@('Community stars', $starsValue))
+[void] $signal.AddRow([object[]]@('Community forks', $forksValue))
+[void] $signal.AddRow([object[]]@('Contributions (12 months)', $contributionValue))
+[void] $signal.AddRow([object[]]@('Active days (12 months)', $activeDaysValue))
+[void] $signal.AlignColumn(1, [ChartForgeX.Terminal.TerminalColumnAlignment]::Right)
+
+$portfolio = [ChartForgeX.Terminal.TerminalTable]::Create()
+[void] $portfolio.WithColumns([string[]]@('PROJECT', 'STACK', 'STARS', 'UPDATED'))
+[void] $portfolio.AlignColumn(2, [ChartForgeX.Terminal.TerminalColumnAlignment]::Right)
 foreach ($project in $Data.Projects) {
     $updated = [DateTime]::Parse([string]$project.PushedAt, $invariant).ToUniversalTime().ToString('MMM d', $invariant)
-    [void] $projects.AddRow([object[]]@(
+    [void] $portfolio.AddRow([object[]]@(
         [string]$project.Name,
         [string]$project.Language,
         ([int]$project.Stars).ToString('N0', $invariant),
@@ -88,33 +69,41 @@ foreach ($project in $Data.Projects) {
     ))
 }
 
-$grid = [ChartForgeX.VisualBlocks.VisualGrid]::Create()
-[void] $grid.WithTitle("$profileName $separator Engineering in public")
-[void] $grid.WithSubtitle("PowerShell $separator .NET $separator Active Directory $separator Microsoft 365 $separator document automation")
-[void] $grid.WithTheme($theme).WithColumns(2).WithPanelSize(410, 132).WithGap(18).WithPadding(24).WithFrame()
-[void] $grid.Add('repositories', $repositoriesCard)
-[void] $grid.Add('stars', $starsCard)
-[void] $grid.Add('forks', $forksCard)
-[void] $grid.Add('contributions', $contributionsCard)
-[void] $grid.Add('calendar', $calendar, 2, 2)
-[void] $grid.Add('projects', $projects, 2, 2)
+$story = New-ImageConsoleStory -StoryScript {
+    param($Console)
 
-$motion = [ChartForgeX.Motion.VisualMotionTimeline]::Create()
-[void] $motion.Reveal('title', 0, 0.85)
-[void] $motion.Fade('subtitle', 0.12, 0.65)
-[void] $motion.Rise('repositories', 0.3, 0.68, 10)
-[void] $motion.Rise('stars', 0.42, 0.68, 10)
-[void] $motion.Rise('forks', 0.54, 0.68, 10)
-[void] $motion.Rise('contributions', 0.66, 0.68, 10)
-[void] $motion.Rise('calendar', 0.9, 0.72, 12)
-[void] $motion.Rise('projects', 1.14, 0.72, 12)
+    [void] $Console.WithTitle('pwsh - C:\OpenSource')
+    [void] $Console.WithDialect([ChartForgeX.Terminal.TerminalDialect]::PowerShell)
+    [void] $Console.WithWorkingDirectory('C:\OpenSource')
+    [void] $Console.WithTheme([ChartForgeX.Terminal.TerminalTheme]::PowerShell())
+    [void] $Console.WithWidth(886).WithTypography(13.5, 20).WithTiming(0.35, 52, 0.055)
 
-$story = New-ImageVisualStory -Grid $grid -Motion $motion -FilePath $OutputPath -PassThru
+    [void] $Console.Command("Get-EngineeringProfile -Name 'PrzemyslawKlys'")
+    [void] $Console.Output(('Name         ' + $profileName), [ChartForgeX.Terminal.TerminalTextTone]::Accent)
+    [void] $Console.Output('Role         IT Architect / Open-source maintainer / Microsoft MVP')
+    [void] $Console.Output("Focus        PowerShell $separator .NET $separator Identity $separator Microsoft 365 $separator Documents")
+    [void] $Console.Output('Approach     Reusable cores. Thin surfaces. Production-grade automation.', [ChartForgeX.Terminal.TerminalTextTone]::Muted)
+    [void] $Console.Blank()
+
+    [void] $Console.Command('Get-OpenSourceSignal -Organization EvotecIT')
+    [void] $Console.Table($signal)
+    [void] $Console.Blank()
+
+    [void] $Console.Command('Get-ActivePortfolio -Organization EvotecIT -Top 5')
+    [void] $Console.Table($portfolio)
+    [void] $Console.Blank()
+
+    [void] $Console.Command('Get-EngineeringFocus -AsChecklist')
+    [void] $Console.Output('[+] Identity and Windows infrastructure', [ChartForgeX.Terminal.TerminalTextTone]::Success)
+    [void] $Console.Output('[+] Documents, reporting, and Microsoft 365 automation', [ChartForgeX.Terminal.TerminalTextTone]::Success)
+    [void] $Console.Output('[+] Shared foundations that keep product surfaces thin', [ChartForgeX.Terminal.TerminalTextTone]::Success)
+} -FilePath $OutputPath -PassThru
+
 if (-not [string]::IsNullOrWhiteSpace($StaticOutputPath)) {
-    $story | New-ImageVisualStory -FilePath $StaticOutputPath
+    $story | New-ImageConsoleStory -FilePath $StaticOutputPath
 }
 if (-not [string]::IsNullOrWhiteSpace($HtmlOutputPath)) {
-    $story | New-ImageVisualStory -FilePath $HtmlOutputPath
+    $story | New-ImageConsoleStory -FilePath $HtmlOutputPath
 }
 
 $story

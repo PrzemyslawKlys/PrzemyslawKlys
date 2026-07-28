@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-story.svg" width="886" alt="Przemysław Kłys engineering profile: maintained repositories, community reach, contribution rhythm, and active EvotecIT projects">
+  <img src="./assets/profile-story.svg" width="886" alt="Animated PowerShell console introducing Przemysław Kłys, open-source activity, active EvotecIT projects, and engineering focus">
 </p>
 
 <p align="center">
@@ -39,4 +39,4 @@ Most of that work lives in the [EvotecIT organization](https://github.com/Evotec
 - [Mastering Active Directory Hygiene: Automating SIDHistory Cleanup with CleanupMonster](https://evotec.xyz/blog/mastering-active-directory-hygiene-automating-sidhistory-cleanup-with-cleanupmonster/)
 <!-- BLOG-POST-LIST:END -->
 
-<sub>The profile visual is generated from public GitHub data with ImagePlayground and ChartForgeX. Its one-shot SVG motion has a static reduced-motion fallback.</sub>
+<sub>The PowerShell console presentation is generated from public GitHub data with ImagePlayground and ChartForgeX. Its script-free SVG motion has a completed reduced-motion fallback.</sub>
