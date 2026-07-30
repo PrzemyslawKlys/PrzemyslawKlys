@@ -32,11 +32,11 @@ jobs:
       - name: Commit refreshed visual
         shell: bash
         run: |
-          if [[ -z "$(git status --porcelain -- assets/profile-story.svg)" ]]; then
+          if [[ -z "$(git status --porcelain -- assets/profile-story.svg assets/profile-story.gif)" ]]; then
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-story.svg
+          git add assets/profile-story.svg assets/profile-story.gif
           git commit -m "chore(profile): refresh visual"
           git push

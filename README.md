@@ -39,4 +39,4 @@ Most of that work lives in the [EvotecIT organization](https://github.com/Evotec
 - [Mastering Active Directory Hygiene: Automating SIDHistory Cleanup with CleanupMonster](https://evotec.xyz/blog/mastering-active-directory-hygiene-automating-sidhistory-cleanup-with-cleanupmonster/)
 <!-- BLOG-POST-LIST:END -->
 
-<sub>The PowerShell console presentation is generated from public GitHub data with ImagePlayground and ChartForgeX. Its script-free SVG motion has a completed reduced-motion fallback.</sub>
+<sub>The PowerShell console presentation is generated from public GitHub data with ImagePlayground and ChartForgeX. Its script-free SVG motion has a completed reduced-motion fallback. A <a href="./assets/profile-story.gif">portable GIF edition</a> is available for Discord and other chat surfaces.</sub>

@@ -10,6 +10,9 @@ param(
     [string] $StaticOutputPath,
 
     [Parameter()]
+    [string] $AnimatedOutputPath = (Join-Path -Path $PSScriptRoot -ChildPath '..\assets\profile-story.gif'),
+
+    [Parameter()]
     [string] $HtmlOutputPath
 )
 
@@ -107,6 +110,9 @@ $story = New-ImageConsoleStory -StoryScript {
 
 if (-not [string]::IsNullOrWhiteSpace($StaticOutputPath)) {
     $story | New-ImageConsoleStory -FilePath $StaticOutputPath
+}
+if (-not [string]::IsNullOrWhiteSpace($AnimatedOutputPath)) {
+    $story | New-ImageConsoleStory -FilePath $AnimatedOutputPath -FramesPerSecond 8 -EndHoldSeconds 1.5
 }
 if (-not [string]::IsNullOrWhiteSpace($HtmlOutputPath)) {
     $story | New-ImageConsoleStory -FilePath $HtmlOutputPath
