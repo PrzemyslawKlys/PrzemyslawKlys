@@ -77,6 +77,7 @@ $story = New-ImageConsoleStory `
     -Dialect PowerShell `
     -WorkingDirectory 'C:\OpenSource' `
     -Theme PowerShell `
+    -WindowStyle WindowsTerminal `
     -Width 886 `
     -FontSize 13.5 `
     -LineHeight 20 `
