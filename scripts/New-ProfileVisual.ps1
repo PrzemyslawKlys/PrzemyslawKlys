@@ -19,9 +19,7 @@ param(
 Set-StrictMode -Version 2.0
 $ErrorActionPreference = 'Stop'
 
-if (-not (Get-Command -Name New-ImageConsoleStory -ErrorAction SilentlyContinue)) {
-    Import-Module -Name ImagePlayground -MinimumVersion 3.2.0 -ErrorAction Stop
-}
+Import-Module -Name ImagePlayground -MinimumVersion 3.2.0 -Force -ErrorAction Stop
 
 $invariant = [System.Globalization.CultureInfo]::InvariantCulture
 $profileName = [string]$Data.DisplayName
