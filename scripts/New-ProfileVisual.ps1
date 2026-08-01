@@ -73,12 +73,12 @@ $signal = @(
 }
 
 $story = New-ImageConsoleStory `
-    -Title 'pwsh - C:\OpenSource' `
+    -Title 'PowerShell' `
     -Dialect PowerShell `
     -WorkingDirectory 'C:\OpenSource' `
-    -Theme PowerShell `
+    -Theme Campbell `
     -WindowStyle WindowsTerminal `
-    -Width 886 `
+    -Width 1100 `
     -FontSize 13.5 `
     -LineHeight 20 `
     -InitialDelaySeconds 0.35 `
@@ -92,14 +92,23 @@ $story = New-ImageConsoleStory `
         New-ImageConsoleStoryOutput -Text 'Approach     Reusable cores. Thin surfaces. Production-grade automation.' -Tone Muted
         New-ImageConsoleStoryBlankLine
 
+        New-ImageConsoleStoryTab `
+            -Id windows-powershell `
+            -Profile WindowsPowerShell `
+            -WorkingDirectory 'C:\OpenSource'
         New-ImageConsoleStoryCommand -Text "Get-OpenSourceSignal -Organization $organizationLiteral"
         $signal | New-ImageConsoleStoryTable -Property Signal, Value -Header SIGNAL, VALUE -Align @{ Value = 'Right' }
         New-ImageConsoleStoryBlankLine
 
-        New-ImageConsoleStoryCommand -Text "Get-ActivePortfolio -Organization $organizationLiteral -Top 5"
+        New-ImageConsoleStoryTab `
+            -Id ubuntu `
+            -Profile Ubuntu `
+            -WorkingDirectory '~/src'
+        New-ImageConsoleStoryCommand -Text "gh repo list $($Data.Organization) --limit 5"
         $portfolio | New-ImageConsoleStoryTable -Property Project, Stack, Stars, Updated -Header PROJECT, STACK, STARS, UPDATED -Align @{ Stars = 'Right' }
         New-ImageConsoleStoryBlankLine
 
+        Select-ImageConsoleStoryTab -Id main
         New-ImageConsoleStoryCommand -Text 'Get-EngineeringFocus -AsChecklist'
         New-ImageConsoleStoryOutput -Text '[+] Identity and Windows infrastructure' -Tone Success
         New-ImageConsoleStoryOutput -Text '[+] Documents, reporting, and Microsoft 365 automation' -Tone Success

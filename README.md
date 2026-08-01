@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-story.svg" width="886" alt="Animated PowerShell console introducing Przemysław Kłys, open-source activity, active EvotecIT projects, and engineering focus">
+  <img src="./assets/profile-story.svg" width="1100" alt="Animated multi-tab terminal story introducing Przemysław Kłys, open-source activity, active EvotecIT projects, and engineering focus">
 </p>
 
 <p align="center">
@@ -39,4 +39,4 @@ Most of that work lives in the [EvotecIT organization](https://github.com/Evotec
 - [Mastering Active Directory Hygiene: Automating SIDHistory Cleanup with CleanupMonster](https://evotec.xyz/blog/mastering-active-directory-hygiene-automating-sidhistory-cleanup-with-cleanupmonster/)
 <!-- BLOG-POST-LIST:END -->
 
-<sub>The PowerShell console presentation is generated from public GitHub data with ImagePlayground and ChartForgeX. Its script-free SVG motion has a completed reduced-motion fallback. A <a href="./assets/profile-story.gif">portable GIF edition</a> is available for Discord and other chat surfaces.</sub>
+<sub>The multi-tab PowerShell, Windows PowerShell, and Ubuntu presentation is generated from public GitHub data with ImagePlayground and ChartForgeX. Its script-free SVG motion has a completed reduced-motion fallback. A <a href="./assets/profile-story.gif">portable GIF edition</a> is available for Discord and other chat surfaces.</sub>
