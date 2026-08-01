@@ -113,6 +113,25 @@ $story = New-ImageConsoleStory `
         New-ImageConsoleStoryOutput -Text '[+] Identity and Windows infrastructure' -Tone Success
         New-ImageConsoleStoryOutput -Text '[+] Documents, reporting, and Microsoft 365 automation' -Tone Success
         New-ImageConsoleStoryOutput -Text '[+] Shared foundations that keep product surfaces thin' -Tone Success
+
+        New-ImageConsoleStoryTab `
+            -Id summary `
+            -Profile PowerShell `
+            -Title 'Summary' `
+            -WorkingDirectory 'C:\OpenSource'
+        New-ImageConsoleStoryCommand -Text 'Get-EngineeringSummary -IncludePortfolio'
+        New-ImageConsoleStoryOutput -Text ('Name         ' + $profileName) -Tone Accent
+        New-ImageConsoleStoryOutput -Text 'Role         IT Architect / Open-source maintainer / Microsoft MVP'
+        New-ImageConsoleStoryOutput -Text "Focus        PowerShell $separator .NET $separator Identity $separator Microsoft 365 $separator Documents"
+        New-ImageConsoleStoryOutput -Text 'Approach     Reusable cores. Thin surfaces. Production-grade automation.' -Tone Muted
+        New-ImageConsoleStoryBlankLine
+        $signal | New-ImageConsoleStoryTable -Property Signal, Value -Header SIGNAL, VALUE -Align @{ Value = 'Right' }
+        New-ImageConsoleStoryBlankLine
+        $portfolio | New-ImageConsoleStoryTable -Property Project, Stack, Stars, Updated -Header PROJECT, STACK, STARS, UPDATED -Align @{ Stars = 'Right' }
+        New-ImageConsoleStoryBlankLine
+        New-ImageConsoleStoryOutput -Text '[+] Identity and Windows infrastructure' -Tone Success
+        New-ImageConsoleStoryOutput -Text '[+] Documents, reporting, and Microsoft 365 automation' -Tone Success
+        New-ImageConsoleStoryOutput -Text '[+] Shared foundations that keep product surfaces thin' -Tone Success
     } `
     -FilePath $OutputPath `
     -PassThru
