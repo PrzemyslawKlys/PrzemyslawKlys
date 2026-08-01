@@ -21,7 +21,7 @@ jobs:
 
       - name: Install ImagePlayground
         shell: pwsh
-        run: Install-Module -Name ImagePlayground -RequiredVersion 3.1.0 -Scope CurrentUser -Force
+        run: Install-Module -Name ImagePlayground -RequiredVersion 3.2.0 -Scope CurrentUser -Force
 
       - name: Generate visual from public GitHub data
         shell: pwsh
