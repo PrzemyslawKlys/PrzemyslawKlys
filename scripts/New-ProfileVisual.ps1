@@ -72,21 +72,7 @@ $signal = @(
     }
 }
 
-$story = New-ImageConsoleStory `
-    -Title 'PowerShell' `
-    -Dialect PowerShell `
-    -WorkingDirectory 'C:\OpenSource' `
-    -Theme Campbell `
-    -WindowStyle WindowsTerminal `
-    -Width 1100 `
-    -FontSize 13.5 `
-    -LineHeight 20 `
-    -InitialDelaySeconds 0.35 `
-    -Speed Slow `
-    -TypingSpeed 32 `
-    -LineDelaySeconds 0.1 `
-    -TabHoldSeconds 2.5 `
-    -Content {
+$storyContent = {
         New-ImageConsoleStoryCommand -Text "Get-EngineeringProfile -Name $userNameLiteral"
         New-ImageConsoleStoryOutput -Text ('Name         ' + $profileName) -Tone Accent
         New-ImageConsoleStoryOutput -Text 'Role         IT Architect / Open-source maintainer / Microsoft MVP'
@@ -94,36 +80,17 @@ $story = New-ImageConsoleStory `
         New-ImageConsoleStoryOutput -Text 'Approach     Reusable cores. Thin surfaces. Production-grade automation.' -Tone Muted
         New-ImageConsoleStoryBlankLine
 
-        New-ImageConsoleStoryTab `
-            -Id windows-powershell `
-            -Profile WindowsPowerShell `
-            -WorkingDirectory 'C:\OpenSource'
-        Select-ImageConsoleStoryTab -Id windows-powershell
+        New-ImageConsoleStoryTab -Id windows-powershell -Profile WindowsPowerShell -WorkingDirectory 'C:\OpenSource'
         New-ImageConsoleStoryCommand -Text "Get-OpenSourceSignal -Organization $organizationLiteral"
         $signal | New-ImageConsoleStoryTable -Property Signal, Value -Header SIGNAL, VALUE -Align @{ Value = 'Right' }
         New-ImageConsoleStoryBlankLine
 
-        New-ImageConsoleStoryTab `
-            -Id ubuntu `
-            -Profile Ubuntu `
-            -WorkingDirectory '~/src'
-        Select-ImageConsoleStoryTab -Id ubuntu
+        New-ImageConsoleStoryTab -Id ubuntu -Profile Ubuntu -WorkingDirectory '~/src'
         New-ImageConsoleStoryCommand -Text "gh repo list $($Data.Organization) --limit 5"
         $portfolio | New-ImageConsoleStoryTable -Property Project, Stack, Stars, Updated -Header PROJECT, STACK, STARS, UPDATED -Align @{ Stars = 'Right' }
         New-ImageConsoleStoryBlankLine
 
-        Select-ImageConsoleStoryTab -Id main
-        New-ImageConsoleStoryCommand -Text 'Get-EngineeringFocus -AsChecklist'
-        New-ImageConsoleStoryOutput -Text '[+] Identity and Windows infrastructure' -Tone Success
-        New-ImageConsoleStoryOutput -Text '[+] Documents, reporting, and Microsoft 365 automation' -Tone Success
-        New-ImageConsoleStoryOutput -Text '[+] Shared foundations that keep product surfaces thin' -Tone Success
-
-        New-ImageConsoleStoryTab `
-            -Id summary `
-            -Profile PowerShell `
-            -Title 'Summary' `
-            -WorkingDirectory 'C:\OpenSource'
-        Select-ImageConsoleStoryTab -Id summary
+        New-ImageConsoleStoryTab -Id summary -Profile PowerShell -Title 'Summary' -WorkingDirectory 'C:\OpenSource'
         New-ImageConsoleStoryCommand -Text 'Get-EngineeringSummary -IncludePortfolio'
         New-ImageConsoleStoryOutput -Text ('Name         ' + $profileName) -Tone Accent
         New-ImageConsoleStoryOutput -Text 'Role         IT Architect / Open-source maintainer / Microsoft MVP'
@@ -137,9 +104,27 @@ $story = New-ImageConsoleStory `
         New-ImageConsoleStoryOutput -Text '[+] Identity and Windows infrastructure' -Tone Success
         New-ImageConsoleStoryOutput -Text '[+] Documents, reporting, and Microsoft 365 automation' -Tone Success
         New-ImageConsoleStoryOutput -Text '[+] Shared foundations that keep product surfaces thin' -Tone Success
-    } `
-    -FilePath $OutputPath `
-    -PassThru
+}
+
+$storyOptions = @{
+    Title               = 'PowerShell'
+    Dialect             = 'PowerShell'
+    WorkingDirectory    = 'C:\OpenSource'
+    Theme               = 'Campbell'
+    WindowStyle         = 'WindowsTerminal'
+    Width               = 1100
+    FontSize            = 13.5
+    LineHeight          = 20
+    InitialDelaySeconds = 0.35
+    Speed               = 'Slow'
+    TypingSpeed         = 32
+    LineDelaySeconds    = 0.1
+    TabHoldSeconds      = 2.5
+    Content             = $storyContent
+    FilePath            = $OutputPath
+    PassThru            = $true
+}
+$story = New-ImageConsoleStory @storyOptions
 
 if (-not [string]::IsNullOrWhiteSpace($StaticOutputPath)) {
     $story | New-ImageConsoleStory -FilePath $StaticOutputPath
