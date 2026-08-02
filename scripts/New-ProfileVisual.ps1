@@ -82,8 +82,10 @@ $story = New-ImageConsoleStory `
     -FontSize 13.5 `
     -LineHeight 20 `
     -InitialDelaySeconds 0.35 `
-    -CharactersPerSecond 52 `
-    -LineDelaySeconds 0.055 `
+    -Speed Slow `
+    -TypingSpeed 32 `
+    -LineDelaySeconds 0.1 `
+    -TabHoldSeconds 2.5 `
     -Content {
         New-ImageConsoleStoryCommand -Text "Get-EngineeringProfile -Name $userNameLiteral"
         New-ImageConsoleStoryOutput -Text ('Name         ' + $profileName) -Tone Accent
@@ -96,6 +98,7 @@ $story = New-ImageConsoleStory `
             -Id windows-powershell `
             -Profile WindowsPowerShell `
             -WorkingDirectory 'C:\OpenSource'
+        Select-ImageConsoleStoryTab -Id windows-powershell
         New-ImageConsoleStoryCommand -Text "Get-OpenSourceSignal -Organization $organizationLiteral"
         $signal | New-ImageConsoleStoryTable -Property Signal, Value -Header SIGNAL, VALUE -Align @{ Value = 'Right' }
         New-ImageConsoleStoryBlankLine
@@ -104,6 +107,7 @@ $story = New-ImageConsoleStory `
             -Id ubuntu `
             -Profile Ubuntu `
             -WorkingDirectory '~/src'
+        Select-ImageConsoleStoryTab -Id ubuntu
         New-ImageConsoleStoryCommand -Text "gh repo list $($Data.Organization) --limit 5"
         $portfolio | New-ImageConsoleStoryTable -Property Project, Stack, Stars, Updated -Header PROJECT, STACK, STARS, UPDATED -Align @{ Stars = 'Right' }
         New-ImageConsoleStoryBlankLine
@@ -119,6 +123,7 @@ $story = New-ImageConsoleStory `
             -Profile PowerShell `
             -Title 'Summary' `
             -WorkingDirectory 'C:\OpenSource'
+        Select-ImageConsoleStoryTab -Id summary
         New-ImageConsoleStoryCommand -Text 'Get-EngineeringSummary -IncludePortfolio'
         New-ImageConsoleStoryOutput -Text ('Name         ' + $profileName) -Tone Accent
         New-ImageConsoleStoryOutput -Text 'Role         IT Architect / Open-source maintainer / Microsoft MVP'
@@ -140,7 +145,7 @@ if (-not [string]::IsNullOrWhiteSpace($StaticOutputPath)) {
     $story | New-ImageConsoleStory -FilePath $StaticOutputPath
 }
 if (-not [string]::IsNullOrWhiteSpace($AnimatedOutputPath)) {
-    $story | New-ImageConsoleStory -FilePath $AnimatedOutputPath -FramesPerSecond 8 -EndHoldSeconds 1.5
+    $story | New-ImageConsoleStory -FilePath $AnimatedOutputPath -FramesPerSecond 3 -EndHoldSeconds 2.5
 }
 if (-not [string]::IsNullOrWhiteSpace($HtmlOutputPath)) {
     $story | New-ImageConsoleStory -FilePath $HtmlOutputPath
