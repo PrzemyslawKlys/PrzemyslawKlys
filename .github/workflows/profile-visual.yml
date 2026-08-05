@@ -1,0 +1,42 @@
+name: Refresh profile visual
+
+on:
+  schedule:
+    - cron: '43 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-content-updates
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Install ImagePlayground
+        shell: pwsh
+        run: Install-Module -Name ImagePlayground -RequiredVersion 3.2.0 -Scope CurrentUser -Force
+
+      - name: Generate visual from public GitHub data
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/Update-ProfileVisual.ps1
+
+      - name: Commit refreshed visual
+        shell: bash
+        run: |
+          if [[ -z "$(git status --porcelain -- assets/profile-story.svg assets/profile-story.gif)" ]]; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-story.svg assets/profile-story.gif
+          git commit -m "chore(profile): refresh visual"
+          git push

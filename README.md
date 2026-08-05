@@ -1,55 +1,57 @@
-﻿<p align="center">
-  <a href="https://twitter.com/przemyslawklys">
-    <img src="https://img.shields.io/badge/Twitter-1da1f2?style=for-the-badge&logo=twitter&logoColor=white">
-  </a>
-  <a href="https://www.linkedin.com/in/pklys/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white">
-  </a>
-  <a href="https://www.facebook.com/evotecpl">
-    <img src="https://img.shields.io/badge/Facebook-000000?style=for-the-badge&logo=facebook&logoColor=white">
-  </a>
-    <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys">
-    <img src="https://img.shields.io/badge/Microsoft MVP-5b24ff?style=for-the-badge&logo=Microsoft&logoColor=white">
-  </a>
-</p>
+<h1 align="center">Przemysław Kłys</h1>
+
 <p align="center">
-  <a href="[#](https://www.powershellgallery.com/profiles/Przemyslaw.Klys)">
-    <img src="https://img.shields.io/badge/PowerShellGallery-48-5b24ff?style=for-the-badge&logo=PowerShell&logoColor=white">
-  </a>
-  <a href="https://github.com/sponsors/PrzemyslawKlys">
-    <img src="https://img.shields.io/github/sponsors/PrzemyslawKlys?style=for-the-badge&logo=Github-Sponsors&logoColor=white">
-  </a>
+  <strong>IT Architect · Open-source maintainer · Microsoft MVP</strong><br>
+  PowerShell · .NET · Identity · Microsoft 365 · Documents · Enterprise automation
 </p>
 
-I'm IT Architect with over 15 years of experience in IT. I'm [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys) since 2020. I'm mostly focused on PowerShell, but I do work with C#, JavaScript, Css and HTML. I try to use the best tool for the job rather then trying to focus on particular language. Just because that tool is always PowerShell it doesn't mean I am PowerShell biased 😂
+<p align="center">
+  <a href="https://evotec.xyz/"><img alt="Evotec website" src="https://img.shields.io/badge/Website-111827?style=for-the-badge&logo=safari&logoColor=white"></a>
+  <a href="https://github.com/EvotecIT"><img alt="EvotecIT projects" src="https://img.shields.io/badge/EvotecIT-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys"><img alt="Microsoft MVP profile" src="https://img.shields.io/badge/Microsoft%20MVP-5B5FC7?style=for-the-badge&logo=microsoft&logoColor=white"></a>
+  <a href="https://github.com/sponsors/PrzemyslawKlys"><img alt="Sponsor Przemysław Kłys" src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
+</p>
 
-I've decided that all projects that I own or maintain are created as part of [Evotec IT](https://github.com/EvotecIT) organization, while I keep my profile for forks of projects I contribute to. This is why you won't see much action on my profile, because most of it goes into **Evotec IT** organization that I own.
+<p align="center">
+  <a href="https://www.linkedin.com/in/pklys/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://x.com/przemyslawklys"><img alt="X / Twitter" src="https://img.shields.io/badge/X%20%2F%20Twitter-000000?style=for-the-badge&logo=x&logoColor=white"></a>
+  <a href="https://www.facebook.com/evotecpl"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-0866FF?style=for-the-badge&logo=facebook&logoColor=white"></a>
+  <a href="https://www.powershellgallery.com/profiles/Przemyslaw.Klys"><img alt="PowerShell Gallery" src="https://img.shields.io/badge/PowerShell%20Gallery-5391FE?style=for-the-badge&logo=powershell&logoColor=white"></a>
+</p>
 
-- 🔭 I’m currently working on [PSWriteHTML](https://github.com/EvotecIT/PSWriteHTML), [Testimo](https://github.com/EvotecIT/Testimo), [GPOZaurr](https://github.com/EvotecIT/GPOZaurr), [PSWinDocumentation](https://github.com/EvotecIT/PSWinDocumentation), and few other projects
-- 🌱 I’m currently learning **HTML** & **JavaScript** & **CSS**
-- 👯 I’m looking to collaborate on any of the projects in [Evotec IT](https://github.com/EvotecIT) organization
+<p align="center">
+  <img src="./assets/profile-story.svg" width="1100" alt="Animated terminal introduction for Przemysław Kłys, his open-source work, active EvotecIT projects, and engineering focus">
+</p>
 
-### My GitHub Stats
+I am an IT architect, open-source maintainer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys) since 2020. I build PowerShell and .NET tools for identity, Microsoft 365, reporting, document automation, and the less glamorous parts of enterprise IT that still need to work every day.
 
-[![Przemyslaw's GitHub stats](https://github-readme-stats.vercel.app/api?username=przemyslawklys&text_color=4189ff&hide=stars&hide_border=true&show_icons=true&theme=dark)](https://github.com/przemyslawklys)
+Most of that work lives in the [EvotecIT organization](https://github.com/EvotecIT), so this personal account is intentionally quieter than the engineering behind it. I use the best tool for the job; PowerShell simply wins that argument suspiciously often.
 
-### My recent blogs
+### What I build
+
+- **Identity and Windows infrastructure:** Active Directory health, Group Policy analysis, security reporting, cleanup, and operational automation.
+- **Documents and reporting:** Word, Excel, PowerPoint, PDF, email, and HTML generation without Office automation or browser-era glue.
+- **Reusable engineering foundations:** rendering, packaging, data access, diagnostics, and shared components that keep product surfaces thin.
+
+### Good places to start
+
+- [OfficeIMO](https://github.com/EvotecIT/OfficeIMO) — COM-free .NET document libraries covering Office, PDF, email, OneNote, and text formats.
+- [PSWriteHTML](https://github.com/EvotecIT/PSWriteHTML) — rich HTML reports, dashboards, charts, and email from PowerShell.
+- [GPOZaurr](https://github.com/EvotecIT/GPOZaurr) — Group Policy inventory, analysis, cleanup, and remediation.
+- [Testimo](https://github.com/EvotecIT/Testimo) — practical Active Directory health checks and infrastructure validation.
+- [PowerBGInfo](https://github.com/EvotecIT/PowerBGInfo) — a flexible PowerShell and .NET alternative to BGInfo.
+
+### Support the work
+
+If a project I maintain saves you time, [GitHub Sponsors](https://github.com/sponsors/PrzemyslawKlys) helps fund the infrastructure, tooling, and focused engineering time behind future releases.
+
+### Recent writing from Evotec
 
 <!-- BLOG-POST-LIST:START -->
-- [Free Microsoft Azure/Office365 Fundamentals Training starting February 6th 2023](https://evotec.xyz/microsoft-fundamental-free-training-starting-february-6th-2023/)
-- [Upload and Download files from Azure Blob Storage using Connection String](https://evotec.xyz/upload-and-download-files-from-azure-blob-storage-using-connection-string/)
-- [PowerBGInfo – PowerShell alternative to Sysinternals BGInfo](https://evotec.xyz/powerbginfo-powershell-alternative-to-sysinternals-bginfo/)
-- [Image Manipulation, Image Resize, Image Combine and more with PowerShell](https://evotec.xyz/image-manipulation-image-resize-image-combine-and-more-with-powershell/)
-- [Easy way to send emails using Microsoft Graph API &lpar;Office 365&rpar; with PowerShell](https://evotec.xyz/easy-way-to-send-emails-using-microsoft-graph-api-office-365-with-powershell/)
-- [Adaptive Cards with Tables and Linebreaks in Microsoft Teams](https://evotec.xyz/adaptive-cards-with-tables-and-linebreaks-in-microsoft-teams/)
-- [Working with VirusTotal from PowerShell](https://evotec.xyz/working-with-virustotal-from-powershell/)
-- [Reporting group membership for critical Active Directory groups](https://evotec.xyz/reporting-group-membership-for-critical-active-directory-groups/)
-- [Finding duplicate DNS records by IP Address using PowerShell](https://evotec.xyz/finding-duplicate-dns-records-by-ip-adress-using-powershell/)
-- [Finding duplicate DNS entries using PowerShell](https://evotec.xyz/finding-duplicate-dns-entries-using-powershell/)
+- [Power Apps - How to Work Around the appres://blobmanager issue](https://evotec.xyz/blog/powerapps-work-around-the-appres-blobmanager-issue/)
+- [How to contribute a post to evotec.xyz](https://evotec.xyz/blog/how-to-contribute-to-evotec-blog/)
+- [Supercharging Your Network Diagnostics with Globalping for NET](https://evotec.xyz/blog/supercharging-your-network-diagnostics-with-globalping-for-net/)
+- [Automating Network Diagnostics with Globalping PowerShell Module](https://evotec.xyz/blog/automating-network-diagnostics-with-globalping-powershell-module/)
+- [Enhanced Dashboards with PSWriteHTML – Introducing InfoCards and Density Options](https://evotec.xyz/blog/enhanced-dashboards-with-pswritehtml-introducing-infocards-and-density-options/)
+- [Mastering Active Directory Hygiene: Automating SIDHistory Cleanup with CleanupMonster](https://evotec.xyz/blog/mastering-active-directory-hygiene-automating-sidhistory-cleanup-with-cleanupmonster/)
 <!-- BLOG-POST-LIST:END -->
-
-### My projects
-
-As I mentioned in the beginning I keep separate organizations with all my projects. As it stands I own <!-- GITHUB-ORGANIZATION-TotalProjects:START -->                                                                                                  <!-- GITHUB-ORGANIZATION-TotalProjects:END --> projects under **[EvotecIT](https://github.com/EvotecIT)** organization.
-While the number of stars on a single project is merely <!-- GITHUB-ORGANIZATION-TopProjectStars:START -->910<!-- GITHUB-ORGANIZATION-TopProjectStars:END -->, there are currently <!-- GITHUB-ORGANIZATION-TotalStars:START -->7519<!-- GITHUB-ORGANIZATION-TotalStars:END --> stars for all of my projects.
-Those projects have been forked <!-- GITHUB-ORGANIZATION-TotalForks:START -->1051<!-- GITHUB-ORGANIZATION-TotalForks:END --> times.
