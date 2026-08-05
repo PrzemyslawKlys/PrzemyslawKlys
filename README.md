@@ -1,16 +1,29 @@
+<h1 align="center">Przemysław Kłys</h1>
+
 <p align="center">
-  <img src="./assets/profile-story.svg" width="1100" alt="Animated multi-tab terminal story introducing Przemysław Kłys, open-source activity, active EvotecIT projects, and engineering focus">
+  <strong>IT Architect · Open-source maintainer · Microsoft MVP</strong><br>
+  PowerShell · .NET · Identity · Microsoft 365 · Documents · Enterprise automation
 </p>
 
 <p align="center">
-  <a href="https://evotec.xyz/">Website</a> ·
-  <a href="https://github.com/EvotecIT">EvotecIT projects</a> ·
-  <a href="https://www.powershellgallery.com/profiles/Przemyslaw.Klys">PowerShell Gallery</a> ·
-  <a href="https://www.linkedin.com/in/pklys/">LinkedIn</a> ·
-  <a href="https://github.com/sponsors/PrzemyslawKlys">Sponsor</a>
+  <a href="https://evotec.xyz/"><img alt="Evotec website" src="https://img.shields.io/badge/Website-111827?style=for-the-badge&logo=safari&logoColor=white"></a>
+  <a href="https://github.com/EvotecIT"><img alt="EvotecIT projects" src="https://img.shields.io/badge/EvotecIT-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys"><img alt="Microsoft MVP profile" src="https://img.shields.io/badge/Microsoft%20MVP-5B5FC7?style=for-the-badge&logo=microsoft&logoColor=white"></a>
+  <a href="https://github.com/sponsors/PrzemyslawKlys"><img alt="Sponsor Przemysław Kłys" src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white"></a>
 </p>
 
-I am an IT architect, open-source maintainer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003657). I build PowerShell and .NET tools for identity, Microsoft 365, reporting, document automation, and the less glamorous parts of enterprise IT that still need to work every day.
+<p align="center">
+  <a href="https://www.linkedin.com/in/pklys/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://x.com/przemyslawklys"><img alt="X / Twitter" src="https://img.shields.io/badge/X%20%2F%20Twitter-000000?style=for-the-badge&logo=x&logoColor=white"></a>
+  <a href="https://www.facebook.com/evotecpl"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-0866FF?style=for-the-badge&logo=facebook&logoColor=white"></a>
+  <a href="https://www.powershellgallery.com/profiles/Przemyslaw.Klys"><img alt="PowerShell Gallery" src="https://img.shields.io/badge/PowerShell%20Gallery-5391FE?style=for-the-badge&logo=powershell&logoColor=white"></a>
+</p>
+
+<p align="center">
+  <img src="./assets/profile-story.svg" width="1100" alt="Animated terminal introduction for Przemysław Kłys, his open-source work, active EvotecIT projects, and engineering focus">
+</p>
+
+I am an IT architect, open-source maintainer, and [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003657?fullName=Przemys%C5%82aw%20K%C5%82ys) since 2020. I build PowerShell and .NET tools for identity, Microsoft 365, reporting, document automation, and the less glamorous parts of enterprise IT that still need to work every day.
 
 Most of that work lives in the [EvotecIT organization](https://github.com/EvotecIT), so this personal account is intentionally quieter than the engineering behind it. I use the best tool for the job; PowerShell simply wins that argument suspiciously often.
 
@@ -28,6 +41,10 @@ Most of that work lives in the [EvotecIT organization](https://github.com/Evotec
 - [Testimo](https://github.com/EvotecIT/Testimo) — practical Active Directory health checks and infrastructure validation.
 - [PowerBGInfo](https://github.com/EvotecIT/PowerBGInfo) — a flexible PowerShell and .NET alternative to BGInfo.
 
+### Support the work
+
+If a project I maintain saves you time, [GitHub Sponsors](https://github.com/sponsors/PrzemyslawKlys) helps fund the infrastructure, tooling, and focused engineering time behind future releases.
+
 ### Recent writing from Evotec
 
 <!-- BLOG-POST-LIST:START -->
@@ -38,5 +55,3 @@ Most of that work lives in the [EvotecIT organization](https://github.com/Evotec
 - [Enhanced Dashboards with PSWriteHTML – Introducing InfoCards and Density Options](https://evotec.xyz/blog/enhanced-dashboards-with-pswritehtml-introducing-infocards-and-density-options/)
 - [Mastering Active Directory Hygiene: Automating SIDHistory Cleanup with CleanupMonster](https://evotec.xyz/blog/mastering-active-directory-hygiene-automating-sidhistory-cleanup-with-cleanupmonster/)
 <!-- BLOG-POST-LIST:END -->
-
-<sub>The multi-tab PowerShell, Windows PowerShell, and Ubuntu presentation is generated from public GitHub data with ImagePlayground and ChartForgeX. Its script-free SVG motion has a completed reduced-motion fallback. A <a href="./assets/profile-story.gif">portable GIF edition</a> is available for Discord and other chat surfaces.</sub>
